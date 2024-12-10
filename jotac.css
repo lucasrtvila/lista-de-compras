@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Fundo mais escuro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #f1f1f1; /* Texto mais claro para contraste */
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #555;
+    border-radius: 20px; /* Forma mais arredondada */
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.botoes-acoes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 30px; /* Botões mais arredondados */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    flex: 1;
+}
+
+button:hover {
+    transform: scale(1.05); /* Leve efeito de ampliação ao passar o mouse */
+}
+
+/* Botões com novas cores */
+button {
+    background-color: #4caf50; /* Verde inicial */
+    color: white;
+}
+
+button:hover {
+    background-color: #388e3c; /* Verde mais escuro */
+}
+
+/* Botão de Compra */
+li button[onclick*="comprarProduto"] {
+    background-color: #03a9f4; /* Azul */
+    border-radius: 30px;
+}
+
+li button[onclick*="comprarProduto"]:hover {
+    background-color: #0288d1; /* Azul mais escuro */
+}
+
+/* Botão de Remover Todos */
+.botoes-acoes button[onclick="removerTodosProdutos()"] {
+    background-color: #e91e63; /* Rosa */
+}
+
+.botoes-acoes button[onclick="removerTodosProdutos()"]:hover {
+    background-color: #c2185b; /* Rosa mais escuro */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 350px;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #2b2b2b; /* Fundo do item mais escuro */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px; /* Borda arredondada */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px; /* Imagens mais arredondadas */
+    margin-right: 15px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra mais evidente */
+}
+
+li button {
+    background-color: #f44336; /* Vermelho */
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: #d32f2f; /* Vermelho mais escuro */
+}
+
+button:active {
+    transform: scale(0.95);
+}
